@@ -1,4 +1,4 @@
-# SVG Circle Module for Loading, Countdown and for fun
+# SVG Circle Module for Loading, Countdown or for fun
 
 #### Live Demo
 Apple Watch Activities: [http://share.framerjs.com/0w3wirptkfc9/](http://share.framerjs.com/0w3wirptkfc9/)<br>
