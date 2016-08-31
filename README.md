@@ -20,17 +20,6 @@ circle = new Circle
 ```
 You can also change the size of the circle `circleSize: 400` and the strokeSize `circleSize: 20`.
 
-## Coloring / Gradients
-You can either use a plain color (default) for the circle or a gradient.
-```coffeescript
-gradientCircle = new Circle
-	topColor: "#7cc201"
-	bottomColor: "#a3fe00"
-
-plainCircle = new Circle
-	color: "#7cc201"
-```
-
 ## Start Animation or set value initial value
 You can animate to a certain value (percent-based). You can change the value any time in your prototype.
 ```coffeescript
@@ -63,9 +52,20 @@ circle.onFinished = ->
 
 You can also get the current value of the circle
 ```coffeescript
-loadingCircle.onFinished = ->
-	if loadingCircle.currentValue == 80
+circle.onFinished = ->
+	if circle.currentValue == 80
 		print "80%"
+```
+
+## Coloring / Gradients
+You can either use a plain color (default) for the circle or a gradient.
+```coffeescript
+gradientCircle = new Circle
+	topColor: "#7cc201"
+	bottomColor: "#a3fe00"
+
+plainCircle = new Circle
+	color: "#7cc201"
 ```
 
 
