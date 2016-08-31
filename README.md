@@ -93,7 +93,7 @@ You can also customize the circle with following properties:
 
 ```coffeescript
 loadingCircle = new Circle
-	circleRadius: 200
+	circleWidth: 200
 	strokeWidth: 30
 
 	topColor: "#ff150f"
