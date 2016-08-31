@@ -53,7 +53,7 @@ circle.onFinished = ->
 You can also get the current value of the circle
 ```coffeescript
 circle.onFinished = ->
-	if circle.currentValue == 80
+	if circle.currentValue == 80 # When Circle was animated to "circle.changeTo(80)"
 		print "80%"
 ```
 
