@@ -44,16 +44,16 @@ countdownCircle = new Circle
 Change the text color `counterColor: "#fff"` and font-size `counterFontSize: 20` to your liking.
 
 ## Callback
-You get a callback when animation is completed
+You can get a callback when animation is completed
 ```coffeescript
 circle.onFinished = ->
 	print "animation done"
 ```
 
-You can also get the current value of the circle
+Get the current value of the circle
 ```coffeescript
 circle.onFinished = ->
-	if circle.currentValue == 80 # When Circle was animated to "circle.changeTo(80)"
+	if circle.currentValue == 80 # TRUE if circle was animated to "circle.changeTo(80)"
 		print "80%"
 ```
 
