@@ -4,8 +4,8 @@
 Apple Watch Activities: [http://share.framerjs.com/0w3wirptkfc9/](http://share.framerjs.com/0w3wirptkfc9/)<br>
 Countdown: [http://share.framerjs.com/8as5o1wn1f0a/](http://share.framerjs.com/8as5o1wn1f0a/)
 
-<img src="https://raw.githubusercontent.com/ServusJon/SVGCircle-Module-for-FramerJS/master/countdown.gif" alt="Countdown" width="400">
-<img src="https://raw.githubusercontent.com/ServusJon/SVGCircle-Module-for-FramerJS/master/applewatchactivities.gif" alt="Apple Watch Activities" width="400">
+<a href="http://share.framerjs.com/8as5o1wn1f0a/"><img src="https://raw.githubusercontent.com/ServusJon/SVGCircle-Module-for-FramerJS/master/countdown.gif" alt="Countdown" width="400"></a>
+<a href="http://share.framerjs.com/0w3wirptkfc9/"><img src="https://raw.githubusercontent.com/ServusJon/SVGCircle-Module-for-FramerJS/master/applewatchactivities.gif" alt="Apple Watch Activities" width="400"></a>
 
 Thank you [Henrique Gusso](https://twitter.com/gusso) for writing that [great article](https://medium.com/@gusso/draw-and-animate-an-svg-circle-in-framer-d4bc3a9863c1#.9kdfcl942).
 
