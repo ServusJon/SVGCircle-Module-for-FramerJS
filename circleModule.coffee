@@ -5,6 +5,7 @@ class exports.Circle extends Layer
 
 		@options.circleSize ?= 300
 		@options.strokeWidth ?= 24
+		@options.linecap ?= "round"
 
 		@options.strokeColor ?= "#fc245c"
 		@options.topColor ?= null
@@ -77,7 +78,7 @@ class exports.Circle extends Layer
 				</defs>
 				<circle id='#{@circleID}'
 						fill='none'
-						stroke-linecap='round'
+						stroke-linecap='#{@options.linecap}'
 						stroke-width      = '#{@options.strokeWidth}'
 						stroke-dasharray  = '#{@.pathLength}'
 						stroke-dashoffset = '0'

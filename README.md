@@ -84,6 +84,7 @@ You can also customize the circle with following properties:
 | `circleSize`  | The size of the circle (default: 300)  |
 | `strokeWidth`  | The thickness of the stroke (default: 24)  |
 | `strokeColor`  | The color of the stroke (default: "#fc245c")  |
+| `linecap` | The shape of the stroke's endcaps. Use "butt", "round" or "square" (default: "round") |
 | `topColor`  | Top Gradient Color  |
 | `bottomColor`  | Bottom Gradient Color  |
 | `hasCounter`  | Set it to `true`, will show a countdown label  (default: null)  |
@@ -95,6 +96,7 @@ You can also customize the circle with following properties:
 loadingCircle = new Circle
 	circleWidth: 200
 	strokeWidth: 30
+	linecap: "round"
 
 	topColor: "#ff150f"
 	bottomColor: "#ff23bd"
