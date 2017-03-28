@@ -95,6 +95,9 @@ class exports.Circle extends Layer
 
 		@proxy = new Layer
 			opacity: 0
+			name: "circuleModuleProxy"
+			
+		@proxy.sendToBack()
 
 		@proxy.on Events.AnimationEnd, (animation, layer) ->
 			self.onFinished()
