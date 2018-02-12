@@ -94,7 +94,7 @@ You can also customize the circle with following properties:
 
 ```coffeescript
 loadingCircle = new Circle
-	circleWidth: 200
+	circleSize: 200
 	strokeWidth: 30
 	linecap: "round"
 
