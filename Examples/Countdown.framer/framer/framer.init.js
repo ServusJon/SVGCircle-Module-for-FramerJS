@@ -56,8 +56,8 @@ function showFileLoadingAlert() {
 	showAlert(html)
 }
 
-function loadProject() {
-	CoffeeScript.load("app.coffee")
+function loadProject(callback) {
+	CoffeeScript.load("app.coffee", callback)
 }
 
 function setDefaultPageTitle() {
@@ -90,8 +90,17 @@ function init() {
 		return showFileLoadingAlert()
 	}
 
-	loadProject()
-
+	loadProject(function(){
+		// CoffeeScript: Framer?.CurrentContext?.emit?("loaded:project")
+		var context;
+		if (typeof Framer !== "undefined" && Framer !== null) {
+			if ((context = Framer.CurrentContext) != null) {
+				if (typeof context.emit === "function") {
+					context.emit("loaded:project");
+				}
+			}
+		}
+	})
 }
 
 init()

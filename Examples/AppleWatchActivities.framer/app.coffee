@@ -8,7 +8,6 @@ Framer.Info =
 	twitter: "@servusjon"
 	description: "Build with SVGCircle Module. Learn more: https://github.com/ServusJon/SVGCircle-Module-for-FramerJS"
 
-
 {Circle} = require "circleModule"
 
 padding = 20
@@ -18,6 +17,7 @@ loadingCircle = new Circle
 	topColor: "#ff150f"
 	bottomColor: "#ff23bd"
 	strokeWidth: 40
+# 	hasLinearEasing: true
 loadingCircle.center()
 
 loadingCircle2 = new Circle

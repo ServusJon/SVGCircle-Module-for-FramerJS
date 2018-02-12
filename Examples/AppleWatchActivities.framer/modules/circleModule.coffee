@@ -5,6 +5,7 @@ class exports.Circle extends Layer
 
 		@options.circleSize ?= 300
 		@options.strokeWidth ?= 24
+		@options.linecap ?= "round"
 
 		@options.strokeColor ?= "#fc245c"
 		@options.topColor ?= null
@@ -13,7 +14,7 @@ class exports.Circle extends Layer
 		@options.hasCounter ?= null
 		@options.counterColor ?= "#fff"
 		@options.counterFontSize ?= 60
-		@options.hasLinearEasing ?= null
+		@options.hasLinearEasing ?= false
 
 		@options.value = 2
 
@@ -77,7 +78,7 @@ class exports.Circle extends Layer
 				</defs>
 				<circle id='#{@circleID}'
 						fill='none'
-						stroke-linecap='round'
+						stroke-linecap='#{@options.linecap}'
 						stroke-width      = '#{@options.strokeWidth}'
 						stroke-dasharray  = '#{@.pathLength}'
 						stroke-dashoffset = '0'
@@ -94,6 +95,9 @@ class exports.Circle extends Layer
 
 		@proxy = new Layer
 			opacity: 0
+			name: "circuleModuleProxy"
+			
+		@proxy.sendToBack()
 
 		@proxy.on Events.AnimationEnd, (animation, layer) ->
 			self.onFinished()
@@ -115,7 +119,7 @@ class exports.Circle extends Layer
 		if time is undefined
 			time = 2
 
-		if @options.hasCounter is true and @options.hasLinearEasing is null # override default "ease-in-out" when counter is used
+		if @options.hasLinearEasing is true
 			customCurve = "linear"
 		else
 			customCurve = "ease-in-out"
@@ -125,8 +129,6 @@ class exports.Circle extends Layer
 				x: 500 * (value / 100)
 			time: time
 			curve: customCurve
-
-
 
 		@currentValue = value
 

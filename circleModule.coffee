@@ -14,7 +14,7 @@ class exports.Circle extends Layer
 		@options.hasCounter ?= null
 		@options.counterColor ?= "#fff"
 		@options.counterFontSize ?= 60
-		@options.hasLinearEasing ?= null
+		@options.hasLinearEasing ?= false
 
 		@options.value = 2
 
@@ -119,7 +119,7 @@ class exports.Circle extends Layer
 		if time is undefined
 			time = 2
 
-		if @options.hasCounter is true and @options.hasLinearEasing is null # override default "ease-in-out" when counter is used
+		if @options.hasLinearEasing is true
 			customCurve = "linear"
 		else
 			customCurve = "ease-in-out"
@@ -129,8 +129,6 @@ class exports.Circle extends Layer
 				x: 500 * (value / 100)
 			time: time
 			curve: customCurve
-
-
 
 		@currentValue = value
 

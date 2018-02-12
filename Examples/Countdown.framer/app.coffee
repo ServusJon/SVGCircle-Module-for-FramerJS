@@ -22,6 +22,7 @@ loadingCircle = new Circle
 	strokeWidth: strokeWidth
 	hasCounter: true
 	counterColor: "#ff1d6a"
+	hasLinearEasing: true
 loadingCircle.center()
 
 loadingCircle.changeTo(100)
